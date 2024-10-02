@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Clickjacking Protection Results</title>
+  </head>
+  <body>
+    <h1>Results for {{ url }}</h1>
+    <ul>
+      <li>X-Frame-Options: {{ results['X-Frame-Options'] }}</li>
+      <li>X-Frame-Options-Status: {{ results['X-Frame-Options-Status'] }}</li>
+      <li>Content-Security-Policy: {{ results['Content-Security-Policy'] }}</li>
+      <li>CSP-Status: {{ results['CSP-Status'] }}</li>
+      <li>Set-Cookie: {{ results['Set-Cookie'] }}</li>
+      <li>SameSite-Status: {{ results['SameSite-Status'] }}</li>
+    </ul>
+    <a href="/">Check another URL</a>
+  </body>
+</html>
